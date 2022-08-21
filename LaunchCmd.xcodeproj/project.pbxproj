@@ -11,6 +11,7 @@
 		E9E5C48F28B28D09000FB25A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C48E28B28D09000FB25A /* ContentView.swift */; };
 		E9E5C49128B28D0A000FB25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5C49028B28D0A000FB25A /* Assets.xcassets */; };
 		E9E5C49428B28D0A000FB25A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5C49328B28D0A000FB25A /* Preview Assets.xcassets */; };
+		E9E5C49E28B2BA93000FB25A /* ProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C49D28B2BA93000FB25A /* ProcessRunner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E9E5C49028B28D0A000FB25A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E5C49328B28D0A000FB25A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9E5C49528B28D0A000FB25A /* LaunchCmd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchCmd.entitlements; sourceTree = "<group>"; };
+		E9E5C49D28B2BA93000FB25A /* ProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E9E5C48C28B28D09000FB25A /* LaunchCmdApp.swift */,
 				E9E5C48E28B28D09000FB25A /* ContentView.swift */,
+				E9E5C49D28B2BA93000FB25A /* ProcessRunner.swift */,
 				E9E5C49028B28D0A000FB25A /* Assets.xcassets */,
 				E9E5C49528B28D0A000FB25A /* LaunchCmd.entitlements */,
 				E9E5C49228B28D0A000FB25A /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				E9E5C48F28B28D09000FB25A /* ContentView.swift in Sources */,
 				E9E5C48D28B28D09000FB25A /* LaunchCmdApp.swift in Sources */,
+				E9E5C49E28B2BA93000FB25A /* ProcessRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
