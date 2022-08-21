@@ -19,8 +19,7 @@ struct ContentView: View {
 				}
 				Button("Run") {
 					do {
-						//output = try runProcess(with: "/bin/zsh", and: "-c", "ls")
-						output = try runProcess(input: input)
+						output = try runProcess(with: "/bin/zsh", and: ["-c", input])
 					}
 					catch {
 						output = error.localizedDescription
