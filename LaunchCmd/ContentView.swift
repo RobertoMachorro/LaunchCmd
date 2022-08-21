@@ -18,14 +18,19 @@ struct ContentView: View {
 					Text("Command")
 				}
 				Button("Run") {
-					output = input
+					do {
+						output = try runProcess(with: "/bin/zsh", and: "-c", "ls")
+					}
+					catch {
+						output = error.localizedDescription
+					}
 				}
 			}
 			Spacer()
 			Text(output)
 			Spacer()
 		}
-		.frame(minWidth: 400, minHeight: 400)
+		.frame(minWidth: 500, minHeight: 350)
 	}
 }
 
