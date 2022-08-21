@@ -7,7 +7,20 @@
 
 import Foundation
 
-func runProcess(with executable: String, and arguments: String...) throws -> String {
+func runProcess(input: String) throws -> String {
+	var parts = input.split(separator: " ")
+
+	if parts.count > 1 {
+		let executable = String(parts.removeFirst())
+		let parameters = parts.map { String($0) }
+
+		return try runProcess(with: executable, and: parameters)
+	}
+
+	return ""
+}
+
+func runProcess(with executable: String, and arguments: [String]) throws -> String {
 	// let task = NSTask() DEPRECATED
 
 	let piped = Pipe()
